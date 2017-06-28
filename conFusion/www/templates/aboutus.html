@@ -14,17 +14,17 @@
       </div>
     </div>
     <div class="card">
-    <ion-list class="list-inset">
-    <div class="item item-divider">
-      Corporate Leadership
-    </div>
-      <ion-item ng-repeat="leader in leaders" class="item item-avatar-left item-text-wrap">
+      <ion-list class="list-inset">
+        <div class="item item-divider">
+          Corporate Leadership
+        </div>
+        <ion-item ng-repeat="leader in leaders" class="item item-avatar-left item-text-wrap">
           <img ng-src="{{baseURL+leader.image}}">
-            <h3>{{leader.name}}</h3>
-            <h3>{{leader.designation}}</h3>
-            <p>{{leader.description}}</p>
-      </ion-item>
-    </ion-list>
+          <h3>{{leader.name}}</h3>
+          <h3>{{leader.designation}}</h3>
+          <p>{{leader.description}}</p>
+        </ion-item>
+      </ion-list>
     </div>
   </ion-content>
 </ion-view>

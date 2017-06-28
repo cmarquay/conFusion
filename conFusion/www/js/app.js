@@ -1,3 +1,5 @@
+"use strict";
+
 // Ionic Starter App
 
 // angular.module is a global place for creating, registering and retrieving Angular modules
@@ -58,6 +60,16 @@ angular.module('conFusion', ['ionic', 'conFusion.controllers', 'conFusion.servic
           'mainContent': {
             templateUrl: 'templates/contactus.html',
             controller: 'ContactController'
+          }
+        }
+      })
+
+      .state('app.favorites', {
+        url: '/favorites',
+        views: {
+          'mainContent': {
+            templateUrl: 'templates/favorites.html',
+            controller: 'FavoritesController'
           }
         }
       })
